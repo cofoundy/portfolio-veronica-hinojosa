@@ -105,17 +105,17 @@ export const siteConfig = {
   featuredCerts: [
     { name: "Certified Postpartum and Infant Care Doula", org: "Pro Doula", year: "2023" },
     { name: "Certified Birth Doula (DONA)", org: "DONA / Chapman Family Center", year: "2005" },
-    { name: "Lactation Educator", org: "Pro Doula", year: "2023" },
+    { name: "Breastfeeding and Lactation Educator", org: "CAPPA", year: "2006, 2013" },
+    { name: "New Parent Educator", org: "Pro Doula", year: "2019" },
+    { name: "Certified Health Coach for Pregnancy and Postpartum", org: "Dr Sears Wellness Institute", year: "2017" },
     { name: "NICU Doula", org: "The Nicu Translator Academy", year: "2026" },
-    { name: "Trauma Informed Care", org: "Tarzana Treatment Centers", year: "2026" },
-    { name: "Kangaroula Certified", org: "Kangaroo Mother Care International", year: "2021" },
   ],
 
   // All 42+ certifications for the scrolling ribbon
   allCerts: [
     "NICU Doula", "Trauma Informed Care", "Certified Infant Feeding Specialist",
     "Certified Postpartum and Infant Care Doula", "Safe Sleep Ambassador", "Registered Kangaroula",
-    "Certified Health Coach", "Neonatal Resuscitation", "Certified Pediatric Massage",
+    "Certified Health Coach for Pregnancy and Postpartum", "Neonatal Resuscitation", "Certified Pediatric Massage",
     "New Parent Educator", "Birth Doula (DONA)", "Postpartum Doula",
     "Nanny Certified (RIE)", "Happiest Baby Educator", "Infant Massage Educator",
     "CPR Certified", "California Trustline Registered", "Licensed Massage Therapist",
@@ -123,7 +123,7 @@ export const siteConfig = {
     "Pet Friendly Doula (Cat/Dog First Aid)", "DV Counselor (LAPD)",
     "Advanced Newborn Care Specialist", "Advanced Multiples Specialist",
     "Infant Care Specialist Level I & II", "Infant Sleep Trainer",
-    "Breastfeeding Educator", "Lactation Educator", "Post Surgery Doula",
+    "Breastfeeding and Lactation Educator", "Post Surgery Doula",
     "Baby Nurse Trainer & Mentor", "Sibling Doula", "Adoption Doula",
     "Doula for Surrogacy", "Unbiased LGBT Doula", "Liability Insured",
     "US Citizen with Current Passport",
