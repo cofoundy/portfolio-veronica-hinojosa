@@ -1,0 +1,43 @@
+---
+import { siteConfig } from "../config";
+const c = siteConfig.colors;
+---
+
+<section id="certifications" class="py-16 md:py-20 bg-white overflow-hidden">
+  <div class="max-w-5xl mx-auto px-6 lg:px-8">
+    <div class="reveal-left mb-10">
+      <span class="text-[10px] md:text-xs font-medium uppercase tracking-[0.25em]" style={`color: ${c.coral}`}>Credentials</span>
+      <h2 class="text-3xl md:text-4xl font-bold mt-2" style={`color: ${c.dark}`}>42+ Certifications</h2>
+      <div class="w-12 h-0.5 mt-3 rounded-full" style={`background: ${c.coral}`}></div>
+    </div>
+
+    {/* Featured certs */}
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-10 reveal stagger-1">
+      {siteConfig.featuredCerts.map((cert) => (
+        <div class="flex items-start gap-3 p-4 rounded-xl" style={`background: ${c.cream}; border: 1px solid ${c.teal}08`}>
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style={`background: ${c.teal}10`}>
+            <svg class="w-4 h-4" style={`color: ${c.teal}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+            </svg>
+          </div>
+          <div class="min-w-0">
+            <p class="text-sm font-semibold" style={`color: ${c.dark}`}>{cert.name}</p>
+            <p class="text-xs text-gray-400">{cert.org} · {cert.year}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* Scrolling certification ribbon */}
+  <div class="reveal stagger-2 relative py-4" style={`background: ${c.teal}05`}>
+    <div class="cert-ribbon flex gap-4 whitespace-nowrap">
+      {/* Double the items for seamless loop */}
+      {[...siteConfig.allCerts, ...siteConfig.allCerts].map((cert) => (
+        <span class="inline-block text-xs px-3 py-1.5 rounded-full font-medium flex-shrink-0" style={`background: white; color: ${c.teal}; border: 1px solid ${c.teal}12`}>
+          {cert}
+        </span>
+      ))}
+    </div>
+  </div>
+</section>

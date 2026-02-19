@@ -1,0 +1,55 @@
+---
+import { siteConfig } from "../config";
+const c = siteConfig.colors;
+---
+
+<section id="about" class="py-16 md:py-20" style={`background: white`}>
+  <div class="max-w-3xl mx-auto px-6 lg:px-8">
+    {/* Section label */}
+    <div class="reveal-left mb-8">
+      <span class="text-[10px] md:text-xs font-medium uppercase tracking-[0.25em]" style={`color: ${c.coral}`}>About Veronica</span>
+      <h2 class="text-3xl md:text-4xl font-bold mt-2" style={`color: ${c.dark}`}>A Letter to Families</h2>
+      <div class="w-12 h-0.5 mt-3 rounded-full" style={`background: ${c.coral}`}></div>
+    </div>
+
+    {/* The letter — her exact text with bolds */}
+    <div class="reveal stagger-1 space-y-5">
+      {siteConfig.letter.map((p) => (
+        <p class="text-base md:text-[17px] leading-[1.8] text-gray-700">
+          <Fragment set:html={p} />
+        </p>
+      ))}
+    </div>
+
+    {/* Personal closing */}
+    <div class="reveal stagger-2 mt-10 pt-8" style={`border-top: 1px solid ${c.teal}12`}>
+      <p class="text-lg md:text-xl italic font-semibold" style={`color: ${c.coral}`}>
+        {siteConfig.letterClosing.tagline}
+      </p>
+      <p class="text-lg md:text-xl italic font-semibold mt-1" style={`color: ${c.coral}`}>
+        {siteConfig.letterClosing.line2}
+      </p>
+      <div class="mt-5">
+        <p class="text-sm text-gray-400">{siteConfig.letterClosing.signoff}</p>
+        <p class="text-lg font-bold mt-1" style={`color: ${c.dark}`}>{siteConfig.letterClosing.signature}</p>
+      </div>
+    </div>
+
+    {/* Mission Statement — pullquote card */}
+    <div class="reveal stagger-3 mt-12 p-6 md:p-8 rounded-2xl" style={`background: ${c.cream}; border: 1px solid ${c.teal}08`}>
+      <div class="flex gap-4">
+        <div class="flex-shrink-0 mt-1">
+          <svg class="w-5 h-5" style={`color: ${c.coral}`} fill="currentColor" viewBox="0 0 24 24">
+            <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="text-xs font-medium uppercase tracking-wider mb-2" style={`color: ${c.teal}`}>Our Mission</p>
+          <p class="text-base md:text-[17px] leading-[1.8] text-gray-600 italic">
+            "{siteConfig.mission}"
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

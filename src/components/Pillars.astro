@@ -1,0 +1,51 @@
+---
+import { siteConfig } from "../config";
+const c = siteConfig.colors;
+
+const icons: Record<string, string> = {
+  moon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>',
+  heart: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>',
+  plane: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>',
+};
+---
+
+<section id="services" class="py-16 md:py-20" style={`background: ${c.cream}`}>
+  <div class="max-w-5xl mx-auto px-6 lg:px-8">
+    <div class="reveal-left mb-10">
+      <span class="text-[10px] md:text-xs font-medium uppercase tracking-[0.25em]" style={`color: ${c.coral}`}>Services</span>
+      <h2 class="text-3xl md:text-4xl font-bold mt-2" style={`color: ${c.dark}`}>How Veronica Helps</h2>
+      <div class="w-12 h-0.5 mt-3 rounded-full" style={`background: ${c.coral}`}></div>
+    </div>
+
+    <div class="space-y-4">
+      {siteConfig.pillars.map((pillar, i) => (
+        <div
+          class={`reveal stagger-${i + 1} p-6 md:p-8 rounded-2xl bg-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md`}
+          style={`border: 1px solid ${c.teal}08; box-shadow: 0 2px 12px ${c.teal}04`}
+        >
+          <div class="flex flex-col md:flex-row md:items-start gap-5">
+            {/* Icon */}
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={`background: linear-gradient(135deg, ${c.teal}10, ${c.coral}10)`}>
+              <svg class="w-6 h-6" style={`color: ${c.teal}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <Fragment set:html={icons[pillar.icon] || icons.heart} />
+              </svg>
+            </div>
+
+            <div class="flex-1">
+              <h3 class="text-xl md:text-2xl font-bold mb-2" style={`color: ${c.dark}`}>{pillar.title}</h3>
+              <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-4">{pillar.description}</p>
+
+              <div class="flex flex-wrap gap-2">
+                {pillar.specialties.map((s) => (
+                  <span class="text-xs px-3 py-1 rounded-full font-medium" style={`background: ${c.teal}06; color: ${c.teal}; border: 1px solid ${c.teal}12`}>
+                    {s}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
