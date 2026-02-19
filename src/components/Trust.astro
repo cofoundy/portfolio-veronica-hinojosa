@@ -21,9 +21,9 @@ const c = siteConfig.colors;
         class="reveal stagger-1 group p-6 rounded-2xl bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
         style={`border: 1px solid ${c.teal}10; box-shadow: 0 2px 12px ${c.teal}06`}
       >
-        <div class="flex items-center gap-2 mb-3">
-          <div class="w-8 h-8 rounded-lg flex items-center justify-center text-white" style="background: #D32323">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.996-4.407c.408-.6 1.26-.58 1.632.036l1.543 2.558c.42.7.42 1.31 0 2.01zm-7.166 5.15l-.504-5.23c-.096-1 1.056-1.65 1.74-.98l3.63 3.534c.492.48.372 1.32-.228 1.596l-2.49 1.152c-.678.312-1.374.312-2.148-.072zm-2.09-5.82l-4.764-2.07c-.894-.39-.894-1.662 0-2.052l2.502-1.086c.66-.288 1.356-.108 1.848.48l2.262 3.156c.564.786-.18 1.836-1.092 1.572l-.756-.216zm-4.9 7.684l1.35-5.07c.258-.966 1.56-1.11 2.016-.228l2.424 4.698c.33.636-.072 1.386-.762 1.422l-2.868.18c-.78.048-1.41-.252-2.16-1.002zm1.368-14.358l3.678 3.534c.696.672.234 1.86-.696 1.794l-4.926-.342c-.672-.048-1.098-.684-.81-1.212l1.206-2.196c.384-.702.84-1.104 1.548-1.578z"/></svg>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center text-white" style="background: #D32323">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.996-4.407c.408-.6 1.26-.58 1.632.036l1.543 2.558c.42.7.42 1.31 0 2.01zm-7.166 5.15l-.504-5.23c-.096-1 1.056-1.65 1.74-.98l3.63 3.534c.492.48.372 1.32-.228 1.596l-2.49 1.152c-.678.312-1.374.312-2.148-.072zm-2.09-5.82l-4.764-2.07c-.894-.39-.894-1.662 0-2.052l2.502-1.086c.66-.288 1.356-.108 1.848.48l2.262 3.156c.564.786-.18 1.836-1.092 1.572l-.756-.216zm-4.9 7.684l1.35-5.07c.258-.966 1.56-1.11 2.016-.228l2.424 4.698c.33.636-.072 1.386-.762 1.422l-2.868.18c-.78.048-1.41-.252-2.16-1.002zm1.368-14.358l3.678 3.534c.696.672.234 1.86-.696 1.794l-4.926-.342c-.672-.048-1.098-.684-.81-1.212l1.206-2.196c.384-.702.84-1.104 1.548-1.578z"/></svg>
           </div>
           <div class="flex gap-0.5">
             {[1,2,3,4,5].map(() => (
@@ -55,14 +55,20 @@ const c = siteConfig.colors;
 
       {/* Press */}
       <div class="reveal stagger-3 p-6 rounded-2xl bg-white" style={`border: 1px solid ${c.teal}10; box-shadow: 0 2px 12px ${c.teal}06`}>
-        <div class="w-8 h-8 rounded-lg flex items-center justify-center mb-3" style={`background: ${c.teal}10`}>
-          <svg class="w-4 h-4" style={`color: ${c.teal}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={`background: ${c.teal}10`}>
+          <svg class="w-5 h-5" style={`color: ${c.teal}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
           </svg>
         </div>
         <p class="text-2xl font-bold" style={`color: ${c.dark}`}>Featured</p>
-        <p class="text-sm font-medium" style={`color: ${c.teal}`}>In the News</p>
-        <p class="text-xs text-gray-400 mt-1">La Opini&oacute;n &middot; Voyage LA Magazine</p>
+        <p class="text-sm font-medium mb-2" style={`color: ${c.teal}`}>In the News</p>
+        <div class="flex flex-col gap-1">
+          {siteConfig.press.map((article) => (
+            <a href={article.url} target="_blank" rel="noopener noreferrer" class="text-xs text-gray-500 hover:underline flex items-center gap-1 transition-colors" style={`hover:color: ${c.coral}`}>
+              <span style={`color: ${c.coral}`}>&#9656;</span> {article.source}
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   </div>

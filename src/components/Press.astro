@@ -11,7 +11,7 @@ const c = siteConfig.colors;
       <div class="w-12 h-0.5 mt-3 rounded-full" style={`background: ${c.coral}`}></div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 gap-4 max-w-3xl">
       {siteConfig.press.map((article, i) => {
         const isLink = !!article.url;
         const Tag = isLink ? "a" : "div";

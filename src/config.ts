@@ -23,7 +23,7 @@ export const siteConfig = {
   stats: [
     { value: "26+", label: "Years" },
     { value: "1,000+", label: "Families" },
-    { value: "91+", label: "Yelp Reviews" },
+    { value: "111+", label: "Yelp Reviews" },
     { value: "42+", label: "Certifications" },
   ],
 
@@ -48,7 +48,7 @@ export const siteConfig = {
   // ─── Trust pillars ───
   yelp: {
     url: "https://www.yelp.com/biz/baby-nurse-and-doula-services-los-angeles-3",
-    reviews: "91+",
+    reviews: "111+",
     label: "5-Star Reviews on Yelp",
     sublabel: "Top 10 Best Baby Night Nurse in Los Angeles",
   },
@@ -62,20 +62,20 @@ export const siteConfig = {
   // ─── Press — she explicitly asked for this ───
   press: [
     {
+      title: "LA County Seeks to Expand Doula Services for Women with Medi-Cal and Low Income",
+      source: "La Opinión",
+      date: "January 30, 2020",
+      url: "https://laopinion.com/2020/01/30/el-condado-de-la-busca-expandir-servicio-para-mujeres/",
+      excerpt:
+        "Veronica was featured in this La Opinión article advocating for expanded doula services to support underserved families through Medi-Cal.",
+    },
+    {
       title: "Community Highlights: Meet Veronica Hinojosa-Stang",
       source: "Voyage LA Magazine",
       date: "November 2025",
       url: "https://voyagela.com/interview/community-highlights-meet-veronica-hinojosa-stang-of-baby-nurse-and-doula-services/",
       excerpt:
         "An in-depth feature on Veronica\u2019s journey, her passion for supporting families, and how Baby Nurse and Doula Services became a trusted name in Los Angeles.",
-    },
-    {
-      title: "LA County Seeks to Expand Doula Services for Women with Medi-Cal and Low Income",
-      source: "La Opini\u00f3n",
-      date: "January 30, 2020",
-      url: "",
-      excerpt:
-        "Veronica was featured in this La Opini\u00f3n article advocating for expanded doula services to support underserved families through Medi-Cal.",
     },
   ],
 
@@ -103,12 +103,12 @@ export const siteConfig = {
 
   // ─── Featured certifications (top 6 highlighted) ───
   featuredCerts: [
+    { name: "Certified Postpartum Doula", org: "Pro Doula", year: "2023" },
+    { name: "Certified Birth Doula (DONA)", org: "DONA / Chapman Family Center", year: "2005" },
+    { name: "Lactation Educator", org: "Pro Doula", year: "2023" },
     { name: "NICU Doula", org: "The Nicu Translator Academy", year: "2026" },
     { name: "Trauma Informed Care", org: "Tarzana Treatment Centers", year: "2026" },
     { name: "Kangaroula Certified", org: "Kangaroo Mother Care International", year: "2021" },
-    { name: "Safe Sleep Ambassador", org: "Safe Sleep Ambassador Program", year: "2022" },
-    { name: "Certified Birth Doula", org: "DONA / Chapman Family Center", year: "2005" },
-    { name: "Bachelor\u2019s in Education", org: "National University of Trujillo, Peru", year: "1998" },
   ],
 
   // All 42+ certifications for the scrolling ribbon
