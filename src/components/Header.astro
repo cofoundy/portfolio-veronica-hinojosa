@@ -17,27 +17,27 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
     <ul class="flex items-center gap-6">
       <li>
         <a href="#about" class="link-underline text-sm font-medium transition-colors duration-300" style={`color: ${siteConfig.accentColor}; --underline-color: ${siteConfig.highlightColor}`}>
-          Sobre Mí
+          About
         </a>
       </li>
       {hasProjects && (
         <li>
           <a href="#projects" class="link-underline text-sm font-medium transition-colors duration-300" style={`color: ${siteConfig.accentColor}`}>
-            Proyectos
+            Services
           </a>
         </li>
       )}
       {hasExperience && (
         <li>
           <a href="#experience" class="link-underline text-sm font-medium transition-colors duration-300" style={`color: ${siteConfig.accentColor}`}>
-            Experiencia
+            Experience
           </a>
         </li>
       )}
       {hasEducation && (
         <li>
           <a href="#education" class="link-underline text-sm font-medium transition-colors duration-300" style={`color: ${siteConfig.accentColor}`}>
-            Educación
+            Education
           </a>
         </li>
       )}
