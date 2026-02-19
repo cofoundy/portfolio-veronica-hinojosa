@@ -2,120 +2,133 @@
 import { siteConfig } from "../config";
 ---
 
-<!-- Accent Shimmer Bar -->
-<div
-  class="w-full h-2 accent-bar-shimmer"
-  style={`background: linear-gradient(90deg, ${siteConfig.accentColor} 0%, ${siteConfig.highlightColor} 50%, ${siteConfig.accentColor} 100%)`}
-></div>
+<section id="hero" class="relative overflow-hidden">
+  {/* ─── Background ─── */}
+  <div class="absolute inset-0" style={`background: linear-gradient(135deg, ${siteConfig.accentColor}08 0%, white 40%, white 60%, ${siteConfig.highlightColor}06 100%)`}></div>
 
-<section
-  id="hero"
-  class="relative py-12 md:py-16 lg:py-20 bg-gray-50"
->
-  <div class="max-w-6xl mx-auto px-6 lg:px-8">
-    <!-- Main Hero Content -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
-      <!-- Photo -->
-      <div class="order-2 md:order-1 flex justify-center md:justify-start">
-        <div class="relative hero-photo">
-          <div
-            class="absolute -inset-3 rounded-2xl opacity-20"
-            style={`background-color: ${siteConfig.accentColor}`}
-          ></div>
-          <img
-            src="/profile.jpg"
-            alt={siteConfig.name}
-            class="relative w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 object-cover rounded-2xl shadow-xl"
-            style={`border: 4px solid ${siteConfig.highlightColor}`}
-          />
-        </div>
+  {/* ─── Decorative shapes ─── */}
+  <div class="absolute top-0 right-0 w-96 h-96 rounded-full opacity-[0.04] -translate-y-1/2 translate-x-1/3" style={`background: radial-gradient(circle, ${siteConfig.accentColor}, transparent 70%)`}></div>
+  <div class="absolute bottom-0 left-0 w-72 h-72 rounded-full opacity-[0.04] translate-y-1/2 -translate-x-1/3" style={`background: radial-gradient(circle, ${siteConfig.highlightColor}, transparent 70%)`}></div>
+
+  {/* ─── Top accent line ─── */}
+  <div class="w-full h-1 accent-bar-shimmer" style={`background: linear-gradient(90deg, ${siteConfig.accentColor} 0%, ${siteConfig.highlightColor} 50%, ${siteConfig.accentColor} 100%)`}></div>
+
+  <div class="relative max-w-6xl mx-auto px-6 lg:px-8 pt-16 md:pt-20 lg:pt-24 pb-12 md:pb-16">
+    {/* ─── Brand Label ─── */}
+    <div class="hero-brand text-center mb-10 md:mb-14">
+      <span
+        class="inline-block text-[10px] md:text-xs font-semibold uppercase tracking-[0.3em] px-4 py-1.5 rounded-full"
+        style={`color: ${siteConfig.highlightColor}; border: 1px solid ${siteConfig.highlightColor}30; background: ${siteConfig.highlightColor}08`}
+      >
+        Baby Nurse & Doula Services
+      </span>
+    </div>
+
+    {/* ─── Main Content ─── */}
+    <div class="flex flex-col items-center text-center">
+
+      {/* ─── Photo with decorative ring ─── */}
+      <div class="hero-photo relative mb-8">
+        {/* Outer glow */}
+        <div class="absolute -inset-6 rounded-full opacity-15 blur-xl" style={`background: ${siteConfig.accentColor}`}></div>
+        {/* Decorative ring */}
+        <div class="absolute -inset-3 rounded-full" style={`border: 2px dashed ${siteConfig.highlightColor}40`}></div>
+        {/* Inner ring */}
+        <div class="absolute -inset-1 rounded-full" style={`border: 3px solid ${siteConfig.accentColor}20`}></div>
+        {/* Photo */}
+        <img
+          src="/profile.jpg"
+          alt={siteConfig.name}
+          class="relative w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-cover rounded-full shadow-2xl"
+          style={`border: 4px solid white; box-shadow: 0 25px 50px -12px ${siteConfig.accentColor}30`}
+        />
       </div>
 
-      <!-- Text Content -->
-      <div class="order-1 md:order-2 text-center md:text-left">
-        <h1
-          class="hero-title text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight"
-          style={`color: ${siteConfig.accentColor}`}
-        >
-          {siteConfig.name}
-        </h1>
-        <p
-          class="hero-subtitle text-xl md:text-2xl font-light mt-2 mb-3"
-          style={`color: ${siteConfig.highlightColor}`}
-        >
-          {siteConfig.title}
-        </p>
-        <div
-          class="w-16 h-1 mb-4 mx-auto md:mx-0 rounded-full"
-          style={`background-color: ${siteConfig.highlightColor}`}
-        ></div>
-        <p class="hero-description text-base md:text-lg text-gray-600 leading-relaxed mb-6 max-w-md mx-auto md:mx-0">
-          {siteConfig.tagline}
-        </p>
+      {/* ─── Name ─── */}
+      <h1 class="hero-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight" style={`color: ${siteConfig.accentColor}`}>
+        {siteConfig.name}
+      </h1>
 
-        <!-- CTA Button -->
+      {/* ─── Title ─── */}
+      <p class="hero-subtitle text-base sm:text-lg md:text-xl lg:text-2xl font-light mt-3 md:mt-4 max-w-2xl leading-relaxed" style={`color: ${siteConfig.highlightColor}`}>
+        {siteConfig.title}
+      </p>
+
+      {/* ─── Accent divider ─── */}
+      <div class="hero-description flex items-center gap-3 mt-5">
+        <div class="w-8 h-px" style={`background: ${siteConfig.highlightColor}50`}></div>
+        <svg class="w-4 h-4" style={`color: ${siteConfig.highlightColor}`} fill="currentColor" viewBox="0 0 24 24">
+          <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+        </svg>
+        <div class="w-8 h-px" style={`background: ${siteConfig.highlightColor}50`}></div>
+      </div>
+
+      {/* ─── Tagline ─── */}
+      <p class="hero-description text-sm md:text-base text-gray-500 mt-4 max-w-lg italic">
+        {siteConfig.tagline}
+      </p>
+
+      {/* ─── CTA + Socials ─── */}
+      <div class="hero-cta flex flex-col sm:flex-row items-center gap-4 mt-8">
         {siteConfig.social?.email && (
           <a
             href={`mailto:${siteConfig.social.email}`}
-            class="hero-cta inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-medium transition-transform duration-200 hover:scale-105 mb-6"
-            style={`background-color: ${siteConfig.highlightColor}`}
+            class="group inline-flex items-center gap-2 px-7 py-3 rounded-full text-white font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            style={`background: linear-gradient(135deg, ${siteConfig.accentColor}, ${siteConfig.highlightColor}); box-shadow: 0 10px 25px -5px ${siteConfig.accentColor}40`}
           >
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
             </svg>
             Contact Me
+            <svg class="w-3 h-3 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
           </a>
         )}
 
-        <!-- Social Links -->
-        <div class="hero-social flex gap-3 justify-center md:justify-start flex-wrap">
-          {siteConfig.social?.email && (
-            <a href={`mailto:${siteConfig.social.email}`} class="icon-hover w-10 h-10 rounded-full flex items-center justify-center" style={`background-color: ${siteConfig.accentColor}; color: white`} aria-label="Email">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-            </a>
-          )}
+        <div class="flex gap-2">
           {siteConfig.social?.linkedin && (
-            <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" class="icon-hover w-10 h-10 rounded-full flex items-center justify-center" style={`background-color: ${siteConfig.accentColor}; color: white`} aria-label="LinkedIn">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" class="icon-hover w-9 h-9 rounded-full flex items-center justify-center transition-colors" style={`background-color: ${siteConfig.accentColor}10; color: ${siteConfig.accentColor}`} aria-label="LinkedIn">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             </a>
           )}
           {siteConfig.social?.instagram && (
-            <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" class="icon-hover w-10 h-10 rounded-full flex items-center justify-center" style={`background-color: ${siteConfig.accentColor}; color: white`} aria-label="Instagram">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" class="icon-hover w-9 h-9 rounded-full flex items-center justify-center transition-colors" style={`background-color: ${siteConfig.accentColor}10; color: ${siteConfig.accentColor}`} aria-label="Instagram">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
             </a>
           )}
           {siteConfig.social?.facebook && (
-            <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" class="icon-hover w-10 h-10 rounded-full flex items-center justify-center" style={`background-color: ${siteConfig.accentColor}; color: white`} aria-label="Facebook">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" class="icon-hover w-9 h-9 rounded-full flex items-center justify-center transition-colors" style={`background-color: ${siteConfig.accentColor}10; color: ${siteConfig.accentColor}`} aria-label="Facebook">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
           )}
           {siteConfig.social?.yelp && (
-            <a href={siteConfig.social.yelp} target="_blank" rel="noopener noreferrer" class="icon-hover w-10 h-10 rounded-full flex items-center justify-center" style={`background-color: ${siteConfig.accentColor}; color: white`} aria-label="Yelp">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.996-4.407c.408-.6 1.26-.58 1.632.036l1.543 2.558c.42.7.42 1.31 0 2.01zm-7.166 5.15l-.504-5.23c-.096-1 1.056-1.65 1.74-.98l3.63 3.534c.492.48.372 1.32-.228 1.596l-2.49 1.152c-.678.312-1.374.312-2.148-.072zm-2.09-5.82l-4.764-2.07c-.894-.39-.894-1.662 0-2.052l2.502-1.086c.66-.288 1.356-.108 1.848.48l2.262 3.156c.564.786-.18 1.836-1.092 1.572l-.756-.216zm-4.9 7.684l1.35-5.07c.258-.966 1.56-1.11 2.016-.228l2.424 4.698c.33.636-.072 1.386-.762 1.422l-2.868.18c-.78.048-1.41-.252-2.16-1.002zm1.368-14.358l3.678 3.534c.696.672.234 1.86-.696 1.794l-4.926-.342c-.672-.048-1.098-.684-.81-1.212l1.206-2.196c.384-.702.84-1.104 1.548-1.578z"/></svg>
+            <a href={siteConfig.social.yelp} target="_blank" rel="noopener noreferrer" class="icon-hover w-9 h-9 rounded-full flex items-center justify-center transition-colors" style={`background-color: ${siteConfig.accentColor}10; color: ${siteConfig.accentColor}`} aria-label="Yelp">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.996-4.407c.408-.6 1.26-.58 1.632.036l1.543 2.558c.42.7.42 1.31 0 2.01zm-7.166 5.15l-.504-5.23c-.096-1 1.056-1.65 1.74-.98l3.63 3.534c.492.48.372 1.32-.228 1.596l-2.49 1.152c-.678.312-1.374.312-2.148-.072zm-2.09-5.82l-4.764-2.07c-.894-.39-.894-1.662 0-2.052l2.502-1.086c.66-.288 1.356-.108 1.848.48l2.262 3.156c.564.786-.18 1.836-1.092 1.572l-.756-.216zm-4.9 7.684l1.35-5.07c.258-.966 1.56-1.11 2.016-.228l2.424 4.698c.33.636-.072 1.386-.762 1.422l-2.868.18c-.78.048-1.41-.252-2.16-1.002zm1.368-14.358l3.678 3.534c.696.672.234 1.86-.696 1.794l-4.926-.342c-.672-.048-1.098-.684-.81-1.212l1.206-2.196c.384-.702.84-1.104 1.548-1.578z"/></svg>
             </a>
           )}
         </div>
       </div>
     </div>
 
-    <!-- Stats Row -->
+    {/* ─── Stats ─── */}
     {siteConfig.stats && siteConfig.stats.length > 0 && (
-      <div class="hero-stats grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-12 pt-8 border-t" style={`border-color: ${siteConfig.accentColor}20`}>
-        {siteConfig.stats.map((stat) => (
-          <div class="text-center stat-number">
+      <div class="hero-stats grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mt-14 md:mt-16">
+        {siteConfig.stats.map((stat, i) => (
+          <div
+            class={`stat-number text-center py-5 px-3 rounded-xl backdrop-blur-sm`}
+            style={`background: white; border: 1px solid ${siteConfig.accentColor}12; box-shadow: 0 4px 20px -4px ${siteConfig.accentColor}10`}
+          >
             <div class="text-2xl md:text-3xl lg:text-4xl font-bold" style={`color: ${siteConfig.highlightColor}`}>
               {stat.value}
             </div>
-            <div class="text-xs md:text-sm text-gray-600 mt-1">{stat.label}</div>
+            <div class="text-[11px] md:text-xs text-gray-500 mt-1 uppercase tracking-wider font-medium">{stat.label}</div>
           </div>
         ))}
       </div>
     )}
   </div>
-</section>
 
-<!-- Bottom Accent Bar -->
-<div
-  class="w-full h-2 accent-bar-shimmer"
-  style={`background: linear-gradient(90deg, ${siteConfig.accentColor} 0%, ${siteConfig.highlightColor} 50%, ${siteConfig.accentColor} 100%)`}
-></div>
+  {/* ─── Bottom accent ─── */}
+  <div class="w-full h-1 accent-bar-shimmer" style={`background: linear-gradient(90deg, ${siteConfig.accentColor} 0%, ${siteConfig.highlightColor} 50%, ${siteConfig.accentColor} 100%)`}></div>
+</section>
