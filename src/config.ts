@@ -103,7 +103,7 @@ export const siteConfig = {
 
   // ─── Featured certifications (top 6 highlighted) ───
   featuredCerts: [
-    { name: "Certified Postpartum Doula", org: "Pro Doula", year: "2023" },
+    { name: "Certified Postpartum and Infant Care Doula", org: "Pro Doula", year: "2023" },
     { name: "Certified Birth Doula (DONA)", org: "DONA / Chapman Family Center", year: "2005" },
     { name: "Lactation Educator", org: "Pro Doula", year: "2023" },
     { name: "NICU Doula", org: "The Nicu Translator Academy", year: "2026" },
@@ -114,7 +114,7 @@ export const siteConfig = {
   // All 42+ certifications for the scrolling ribbon
   allCerts: [
     "NICU Doula", "Trauma Informed Care", "Certified Infant Feeding Specialist",
-    "Certified Postpartum Doula", "Safe Sleep Ambassador", "Registered Kangaroula",
+    "Certified Postpartum and Infant Care Doula", "Safe Sleep Ambassador", "Registered Kangaroula",
     "Certified Health Coach", "Neonatal Resuscitation", "Certified Pediatric Massage",
     "New Parent Educator", "Birth Doula (DONA)", "Postpartum Doula",
     "Nanny Certified (RIE)", "Happiest Baby Educator", "Infant Massage Educator",
