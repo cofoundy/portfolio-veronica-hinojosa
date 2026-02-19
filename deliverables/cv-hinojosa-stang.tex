@@ -1,0 +1,133 @@
+% Harvard-Format Professional CV — Veronica Hinojosa-Stang
+% Compile with: xelatex cv-hinojosa-stang.tex
+
+\documentclass[10.5pt,letterpaper]{article}
+
+\usepackage[margin=0.55in, top=0.45in, bottom=0.45in]{geometry}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+% --- Fonts (macOS system fonts) ---
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+
+% --- Colors ---
+\definecolor{headrule}{HTML}{2c3e50}
+\definecolor{linkblue}{HTML}{1a5276}
+
+% --- Hyperlinks ---
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue, pdfborder={0 0 0}}
+
+% --- Section Formatting ---
+\titleformat{\section}
+  {\large\bfseries\centering}
+  {}
+  {0em}
+  {\vspace{-0.4em}\hrulefill\quad}[\quad\hrulefill\vspace{-0.4em}]
+\titlespacing{\section}{0pt}{0.5em}{0.25em}
+
+% --- List Formatting ---
+\setlist[itemize]{nosep, left=0pt, label=\textbullet, itemsep=1pt, topsep=2pt}
+
+% --- No page numbers ---
+\pagestyle{empty}
+
+% --- Custom Commands ---
+\newcommand{\entry}[4]{%
+  \noindent\textbf{#1} \hfill #2 \par\nopagebreak
+  \textit{#3} \hfill \textit{#4} \par\nopagebreak
+}
+
+\begin{document}
+
+% ============================================
+% HEADER
+% ============================================
+\begin{center}
+  {\LARGE\bfseries Veronica Hinojosa-Stang} \\[4pt]
+  \faIcon{map-marker-alt}\enspace Los Angeles \& Long Beach, CA
+  \quad\faIcon{envelope}\enspace \href{mailto:Veronicayourdoula@gmail.com}{Veronicayourdoula@gmail.com}
+  \quad\faIcon{phone}\enspace +1 310 365 8042
+  \\[2pt]
+  \faIcon{linkedin}\enspace \href{https://linkedin.com/in/veronica-hinojosa-stang-3b490219}{linkedin.com/in/veronica-hinojosa-stang}
+\end{center}
+
+\vspace{-0.4em}
+\noindent\rule{\textwidth}{0.8pt}
+\vspace{-0.8em}
+
+% ============================================
+% EXPERIENCE
+% ============================================
+\section{Experience}
+
+\entry{Baby Nurse and Doula Services}{Los Angeles, CA}{Founder \& Lead Newborn Care Specialist}{2005 -- Present}
+\begin{itemize}
+  \item Founded and grew a premier doula practice supporting 1,000+ families across Los Angeles, Orange County, San Bernardino, and internationally over 20+ years
+  \item Achieved Top 10 Best Baby Night Nurse in Los Angeles on Yelp, earning 91+ five-star reviews from satisfied families
+  \item Delivered specialized overnight and daytime newborn care for singles, twins, and preemies, establishing healthy sleep foundations by 12--14 weeks
+  \item Provided trauma-informed NICU doula support including Kangaroo Mother Care and transition-to-home planning for preterm and special needs infants
+  \item Pioneered inclusive family services for LGBT couples, adoptive families, and surrogacy journeys, partnering with Carrot Fertility Benefits and Bridge Program
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Baby Nurse and Doula Services}{Los Angeles, CA}{Birth Doula \& Postpartum Care Provider}{2005 -- Present}
+\begin{itemize}
+  \item Guided 500+ mothers through birth plan development, childbirth education, and immediate postpartum recovery support
+  \item Coached parents on breastfeeding, chest-feeding, and bottle-feeding techniques, improving feeding confidence in the first 6 weeks
+  \item Administered prenatal and postnatal massage therapy, accelerating maternal physical recovery for 200+ clients
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Dr Sears Wellness Institute}{Remote}{Certified Health Coach for Pregnancy \& Postpartum}{2017 -- Present}
+\begin{itemize}
+  \item Counseled new mothers on evidence-based nutrition strategies, improving postpartum healing outcomes and milk production
+\end{itemize}
+\vspace{0.3em}
+
+% ============================================
+% EDUCATION
+% ============================================
+\section{Education}
+
+\entry{National University of Trujillo}{Trujillo, Peru}{Bachelor's Degree in Education}{1994 -- 1998}
+\vspace{0.3em}
+
+\entry{IPPT -- Institute of Professional Practical Therapy}{Los Angeles, CA}{Certified Massage Practitioner}{2006 -- 2009}
+\vspace{0.3em}
+
+% ============================================
+% CERTIFICATIONS & AWARDS
+% ============================================
+\section{Certifications \& Awards}
+
+\begin{itemize}
+  \item \textbf{NICU Doula} -- The Nicu Translator Academy (2026)
+  \item \textbf{Trauma Informed Care} -- Tarzana Treatment Centers (2026)
+  \item \textbf{Certified Infant Feeding Specialist \& Postpartum Doula} -- Pro Doula (2023)
+  \item \textbf{Safe Sleep Ambassador} (2022) \enspace|\enspace \textbf{Kangaroula Registered Certified} (2021)
+  \item \textbf{Certified Health Coach} -- Dr Sears Wellness Institute (2017) \enspace|\enspace \textbf{Neonatal Resuscitation Practitioner} (2016)
+  \item \textbf{Certified Birth Doula} -- DONA / Chapman Family Center (2005, recertifying)
+  \item \textbf{``Most Awesome Doula Business''} 2013 -- Doulas \& Midwives Category, Los Angeles
+  \item \textbf{Featured in La Opini\'{o}n} (Jan 2020): Advocating expanded Doula services for Medi-Cal families
+  \item 42+ total professional certifications including CPR (Adult/Child/Infant), California Trustline Registered
+\end{itemize}
+\vspace{0.1em}
+
+% ============================================
+% SKILLS & ADDITIONAL
+% ============================================
+\section{Skills \& Additional}
+
+\begin{tabularx}{\textwidth}{@{}p{2.3cm} X@{}}
+\textbf{Specialties:} & Postpartum Doula, NICU Doula, Birth Doula, Infant Sleep Coach, Baby Nurse, Infant Massage Educator, Lactation Education, Nanny Transition Training \\
+\textbf{Languages:} & English (fluent), Spanish (bilingual -- native) \\
+\textbf{Scope:} & Domestic \& international travel, adoption, surrogacy, LGBT families, Carrot Fertility compliant \\
+\end{tabularx}
+
+\end{document}

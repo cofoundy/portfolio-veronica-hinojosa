@@ -13,16 +13,65 @@ import { siteConfig } from "../config";
         <div class="w-16 h-1 mt-3 rounded-full" style={`background-color: ${siteConfig.highlightColor}`}></div>
       </div>
 
-      <!-- Bio -->
+      <!-- Bio — her exact text, paragraph by paragraph -->
       <div class="lg:col-span-9 reveal stagger-1">
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-          <Fragment set:html={siteConfig.aboutMe} />
-        </p>
+        <div class="space-y-4">
+          {siteConfig.aboutParagraphs.map((p) => (
+            <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+              {p}
+            </p>
+          ))}
+        </div>
+
+        {/* Personal closing — her signature sign-off */}
+        {siteConfig.aboutClosing && (
+          <div class="mt-8 pt-6 border-t" style={`border-color: ${siteConfig.accentColor}15`}>
+            <p class="text-lg font-semibold italic" style={`color: ${siteConfig.highlightColor}`}>
+              {siteConfig.aboutClosing.tagline}
+            </p>
+            <p class="text-lg font-semibold italic mt-1" style={`color: ${siteConfig.highlightColor}`}>
+              {siteConfig.aboutClosing.line2}
+            </p>
+            <div class="mt-4">
+              <p class="text-sm text-gray-500">{siteConfig.aboutClosing.signoff}</p>
+              <p class="text-base font-semibold mt-1" style={`color: ${siteConfig.accentColor}`}>{siteConfig.aboutClosing.signature}</p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
 
+    {/* Mission Statement */}
+    {siteConfig.mission && (
+      <div class="mt-12 reveal stagger-2">
+        <div
+          class="p-6 md:p-8 rounded-xl"
+          style={`background-color: ${siteConfig.accentColor}08; border: 1px solid ${siteConfig.accentColor}15`}
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1"
+              style={`background-color: ${siteConfig.highlightColor}15`}
+            >
+              <svg class="w-5 h-5" style={`color: ${siteConfig.highlightColor}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold uppercase tracking-wider mb-2" style={`color: ${siteConfig.accentColor}`}>
+                Our Mission
+              </h3>
+              <p class="text-base md:text-lg text-gray-700 leading-relaxed italic">
+                "{siteConfig.mission}"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
+
     <!-- Skills -->
-    <div class="mt-10 pt-8 border-t reveal stagger-2" style={`border-color: ${siteConfig.accentColor}15`}>
+    <div class="mt-10 pt-8 border-t reveal stagger-3" style={`border-color: ${siteConfig.accentColor}15`}>
       <h3 class="text-sm font-semibold uppercase tracking-wider mb-4" style={`color: ${siteConfig.accentColor}`}>
         Specialties
       </h3>
