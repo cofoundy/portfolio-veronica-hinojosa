@@ -112,21 +112,19 @@ export const siteConfig = {
   ],
 
   // All 42+ certifications for the scrolling ribbon
+  // First 4 requested by client (Feb 22, 2026)
   allCerts: [
-    "NICU Doula", "Trauma Informed Care", "Certified Infant Feeding Specialist",
-    "Certified Postpartum and Infant Care Doula", "Safe Sleep Ambassador", "Registered Kangaroula",
-    "Certified Health Coach for Pregnancy and Postpartum", "Neonatal Resuscitation", "Certified Pediatric Massage",
-    "New Parent Educator", "Birth Doula (DONA)", "Postpartum Doula",
-    "Nanny Certified (RIE)", "Happiest Baby Educator", "Infant Massage Educator",
+    "Certified NCS", "Certified Infant Specialist", "Kangaroula Certified", "Happiest Educator",
+    "Safe Sleep Ambassador", "Neonatal Resuscitation", "Certified Pediatric Massage",
+    "Trauma Informed Care", "Certified Infant Feeding Specialist",
+    "Postpartum Doula", "Nanny Certified (RIE)", "Infant Massage Educator",
     "CPR Certified", "California Trustline Registered", "Licensed Massage Therapist",
     "Certified Nurse Assistant", "Home Health Aide", "Prime Time Health Coach",
     "Pet Friendly Doula (Cat/Dog First Aid)", "DV Counselor (LAPD)",
-    "Advanced Newborn Care Specialist", "Advanced Multiples Specialist",
-    "Infant Care Specialist Level I & II", "Infant Sleep Trainer",
-    "Breastfeeding and Lactation Educator", "Post Surgery Doula",
-    "Baby Nurse Trainer & Mentor", "Sibling Doula", "Adoption Doula",
-    "Doula for Surrogacy", "Unbiased LGBT Doula", "Liability Insured",
-    "US Citizen with Current Passport",
+    "Advanced Multiples Specialist", "Infant Sleep Trainer",
+    "Post Surgery Doula", "Baby Nurse Trainer & Mentor", "Sibling Doula",
+    "Adoption Doula", "Doula for Surrogacy", "Unbiased LGBT Doula",
+    "Liability Insured", "US Citizen with Current Passport",
   ],
 
   social: {
