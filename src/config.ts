@@ -109,6 +109,9 @@ export const siteConfig = {
     { name: "New Parent Educator", org: "Pro Doula", year: "2019" },
     { name: "Certified Health Coach for Pregnancy and Postpartum", org: "Dr Sears Wellness Institute", year: "2017" },
     { name: "NICU Doula", org: "The Nicu Translator Academy", year: "2026" },
+    { name: "Certified and Licensed Massage Practitioner", org: "California Massage Therapy Council", year: "2005" },
+    { name: "Infant Massage Educator", org: "Infant Massage USA", year: "2007, 2011" },
+    { name: "Pediatric Massage Certification", org: "Liddlekidz Foundation", year: "2020" },
   ],
 
   // All 42+ certifications for the scrolling ribbon
@@ -117,6 +120,7 @@ export const siteConfig = {
     "Certified NCS", "Certified Infant Specialist", "Kangaroula Certified", "Happiest Educator",
     "Safe Sleep Ambassador", "Neonatal Resuscitation", "Certified Pediatric Massage",
     "Trauma Informed Care", "Certified Infant Feeding Specialist",
+    "Certified and Licensed Massage Practitioner",
     "Postpartum Doula", "Nanny Certified (RIE)", "Infant Massage Educator",
     "CPR Certified", "California Trustline Registered", "Licensed Massage Therapist",
     "Certified Nurse Assistant", "Home Health Aide", "Prime Time Health Coach",
