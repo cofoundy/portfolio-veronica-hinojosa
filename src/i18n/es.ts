@@ -21,8 +21,8 @@ export const es = {
   },
 
   letter: {
-    label: "Sobre Veronica",
-    heading: "Una Carta para las Familias",
+    label: "Conoce a Ms. Veronica",
+    heading: "Un Mensaje para Cada Familia",
     paragraphs: [
       'Con más de <strong>26 años de entrega</strong> y habiendo acompañado a más de <strong>1,000 familias</strong>, Veronica ofrece un cuidado postparto lleno de compasión, experiencia y cercanía durante una de las etapas más hermosas y transformadoras de la vida. Desde <strong>Los Ángeles y Long Beach</strong>, acompaña familias de forma local e internacional como <strong>Enfermera de Bebés Viajera y Doula Internacional</strong>, brindando continuidad, confianza y apoyo profesional donde quiera que la vida las lleve.',
       'Se especializa en el <strong>cuidado de recién nacidos, bebés con necesidades especiales, bebés de NICU, prematuros y gemelos</strong>, y acompaña con orgullo a <strong>familias LGBT</strong>, así como a familias que reciben a sus bebés por nacimiento, adopción o gestación subrogada. También atiende a familias con <strong>beneficios CARROT</strong> y participantes del <strong>Programa Bridge</strong>, asegurando que cada familia tenga acceso a un apoyo de calidad. Veronica camina junto a los padres con presencia serena, guía clara y un cuidado profundamente humano.',
@@ -68,7 +68,7 @@ export const es = {
           "Veronica fue destacada en este artículo de La Opinión, alzando la voz por la expansión del servicio de doulas para acompañar a familias vulnerables a través de Medi-Cal.",
       },
       {
-        title: "Destacados de la Comunidad: Conoce a Veronica Hinojosa-Stang",
+        title: "Destacados de la Comunidad: Conoce a Ms. Veronica",
         excerpt:
           "Un hermoso reportaje sobre el camino de Veronica, su pasión por acompañar familias, y cómo Baby Nurse and Doula Services se convirtió en un nombre de confianza y cariño en Los Ángeles.",
       },
