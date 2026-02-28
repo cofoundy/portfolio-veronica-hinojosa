@@ -1,7 +1,7 @@
 // Spanish texts — traducción completa
 export const es = {
   meta: {
-    title: "Doula Posparto y NICU | Coach de Sueño Infantil | Especialista en Cuidado del Recién Nacido",
+    title: "Doula Postparto & NICU | Coach de Sueño Infantil | Especialista en Recién Nacidos",
     description:
       "Con más de 26 años de experiencia y más de 1,000 familias atendidas, Veronica Hinojosa-Stang ofrece servicios compasivos y expertos de doula posparto, enfermera de bebés y coaching de sueño infantil en Los Ángeles e internacionalmente.",
   },
