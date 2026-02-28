@@ -1,5 +1,12 @@
 ---
 import { siteConfig } from "../config";
+import type { Texts, Lang } from "../i18n";
+
+interface Props {
+  texts: Texts;
+  lang: Lang;
+}
+const { texts } = Astro.props;
 const c = siteConfig.colors;
 
 const icons: Record<string, string> = {
@@ -12,13 +19,13 @@ const icons: Record<string, string> = {
 <section id="services" class="py-16 md:py-20" style={`background: ${c.cream}`}>
   <div class="max-w-5xl mx-auto px-6 lg:px-8">
     <div class="reveal-left mb-10">
-      <span class="text-[10px] md:text-xs font-medium uppercase tracking-[0.25em]" style={`color: ${c.coral}`}>Services</span>
-      <h2 class="text-3xl md:text-4xl font-bold mt-2" style={`color: ${c.dark}`}>How Veronica Helps</h2>
+      <span class="text-[10px] md:text-xs font-medium uppercase tracking-[0.25em]" style={`color: ${c.coral}`}>{texts.pillars.label}</span>
+      <h2 class="text-3xl md:text-4xl font-bold mt-2" style={`color: ${c.dark}`}>{texts.pillars.heading}</h2>
       <div class="w-12 h-0.5 mt-3 rounded-full" style={`background: ${c.coral}`}></div>
     </div>
 
     <div class="space-y-4">
-      {siteConfig.pillars.map((pillar, i) => (
+      {texts.pillars.items.map((pillar, i) => (
         <div
           class={`reveal stagger-${i + 1} p-6 md:p-8 rounded-2xl bg-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md`}
           style={`border: 1px solid ${c.teal}08; box-shadow: 0 2px 12px ${c.teal}04`}
@@ -27,7 +34,7 @@ const icons: Record<string, string> = {
             {/* Icon */}
             <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={`background: linear-gradient(135deg, ${c.teal}10, ${c.coral}10)`}>
               <svg class="w-6 h-6" style={`color: ${c.teal}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <Fragment set:html={icons[pillar.icon] || icons.heart} />
+                <Fragment set:html={icons[siteConfig.pillarIcons[i]] || icons.heart} />
               </svg>
             </div>
 

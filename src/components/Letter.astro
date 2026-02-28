@@ -1,5 +1,12 @@
 ---
 import { siteConfig } from "../config";
+import type { Texts, Lang } from "../i18n";
+
+interface Props {
+  texts: Texts;
+  lang: Lang;
+}
+const { texts } = Astro.props;
 const c = siteConfig.colors;
 ---
 
@@ -7,14 +14,14 @@ const c = siteConfig.colors;
   <div class="max-w-3xl mx-auto px-6 lg:px-8">
     {/* Section label */}
     <div class="reveal-left mb-8">
-      <span class="text-[10px] md:text-xs font-medium uppercase tracking-[0.25em]" style={`color: ${c.coral}`}>About Veronica</span>
-      <h2 class="text-3xl md:text-4xl font-bold mt-2" style={`color: ${c.dark}`}>A Letter to Families</h2>
+      <span class="text-[10px] md:text-xs font-medium uppercase tracking-[0.25em]" style={`color: ${c.coral}`}>{texts.letter.label}</span>
+      <h2 class="text-3xl md:text-4xl font-bold mt-2" style={`color: ${c.dark}`}>{texts.letter.heading}</h2>
       <div class="w-12 h-0.5 mt-3 rounded-full" style={`background: ${c.coral}`}></div>
     </div>
 
     {/* The letter — her exact text with bolds */}
     <div class="reveal stagger-1 space-y-5">
-      {siteConfig.letter.map((p) => (
+      {texts.letter.paragraphs.map((p) => (
         <p class="text-base md:text-[17px] leading-[1.8] text-gray-700">
           <Fragment set:html={p} />
         </p>
@@ -24,14 +31,14 @@ const c = siteConfig.colors;
     {/* Personal closing */}
     <div class="reveal stagger-2 mt-10 pt-8" style={`border-top: 1px solid ${c.teal}12`}>
       <p class="text-lg md:text-xl italic font-semibold" style={`color: ${c.coral}`}>
-        {siteConfig.letterClosing.tagline}
+        {texts.letter.closing.tagline}
       </p>
       <p class="text-lg md:text-xl italic font-semibold mt-1" style={`color: ${c.coral}`}>
-        {siteConfig.letterClosing.line2}
+        {texts.letter.closing.line2}
       </p>
       <div class="mt-5">
-        <p class="text-sm text-gray-400">{siteConfig.letterClosing.signoff}</p>
-        <p class="text-lg font-bold mt-1" style={`color: ${c.dark}`}>{siteConfig.letterClosing.signature}</p>
+        <p class="text-sm text-gray-400">{texts.letter.closing.signoff}</p>
+        <p class="text-lg font-bold mt-1" style={`color: ${c.dark}`}>{texts.letter.closing.signature}</p>
       </div>
     </div>
 
@@ -44,9 +51,9 @@ const c = siteConfig.colors;
           </svg>
         </div>
         <div>
-          <p class="text-xs font-medium uppercase tracking-wider mb-2" style={`color: ${c.teal}`}>Our Mission</p>
+          <p class="text-xs font-medium uppercase tracking-wider mb-2" style={`color: ${c.teal}`}>{texts.letter.missionLabel}</p>
           <p class="text-base md:text-[17px] leading-[1.8] text-gray-600 italic">
-            "{siteConfig.mission}"
+            "{texts.letter.mission}"
           </p>
         </div>
       </div>

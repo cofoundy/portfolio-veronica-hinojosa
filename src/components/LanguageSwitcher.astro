@@ -1,0 +1,77 @@
+---
+import type { Lang } from "../i18n";
+import { siteConfig } from "../config";
+const c = siteConfig.colors;
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+---
+
+<div class="lang-switcher" style={`border: 1px solid ${c.teal}15; background: white; box-shadow: 0 2px 12px ${c.teal}10`}>
+  <a
+    href="/"
+    class:list={["lang-btn", { active: lang === "en" }]}
+    style={lang === "en" ? `background: ${c.teal}; color: white` : `color: ${c.dark}`}
+    aria-label="English"
+  >
+    <span class="flag">&#127482;&#127480;</span>
+    <span class="lang-label">EN</span>
+  </a>
+  <a
+    href="/es/"
+    class:list={["lang-btn", { active: lang === "es" }]}
+    style={lang === "es" ? `background: ${c.teal}; color: white` : `color: ${c.dark}`}
+    aria-label="Español"
+  >
+    <span class="flag">&#127477;&#127466;</span>
+    <span class="lang-label">ES</span>
+  </a>
+</div>
+
+<style>
+  .lang-switcher {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 50;
+    display: flex;
+    border-radius: 9999px;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+  }
+  .lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 200ms ease;
+    letter-spacing: 0.02em;
+  }
+  .lang-btn:hover {
+    opacity: 0.85;
+  }
+  .flag {
+    font-size: 14px;
+    line-height: 1;
+  }
+  @media (max-width: 640px) {
+    .lang-switcher {
+      top: 10px;
+      right: 10px;
+    }
+    .lang-label {
+      display: none;
+    }
+    .lang-btn {
+      padding: 6px 10px;
+    }
+    .flag {
+      font-size: 16px;
+    }
+  }
+</style>

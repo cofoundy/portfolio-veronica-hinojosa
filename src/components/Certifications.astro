@@ -1,13 +1,20 @@
 ---
 import { siteConfig } from "../config";
+import type { Texts, Lang } from "../i18n";
+
+interface Props {
+  texts: Texts;
+  lang: Lang;
+}
+const { texts } = Astro.props;
 const c = siteConfig.colors;
 ---
 
 <section id="certifications" class="py-16 md:py-20 bg-white overflow-hidden">
   <div class="max-w-5xl mx-auto px-6 lg:px-8">
     <div class="reveal-left mb-10">
-      <span class="text-[10px] md:text-xs font-medium uppercase tracking-[0.25em]" style={`color: ${c.coral}`}>Credentials</span>
-      <h2 class="text-3xl md:text-4xl font-bold mt-2" style={`color: ${c.dark}`}>42+ Certifications</h2>
+      <span class="text-[10px] md:text-xs font-medium uppercase tracking-[0.25em]" style={`color: ${c.coral}`}>{texts.certifications.label}</span>
+      <h2 class="text-3xl md:text-4xl font-bold mt-2" style={`color: ${c.dark}`}>{texts.certifications.heading}</h2>
       <div class="w-12 h-0.5 mt-3 rounded-full" style={`background: ${c.coral}`}></div>
     </div>
 
