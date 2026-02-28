@@ -1,12 +1,12 @@
-// Spanish texts — traducción completa
+// Spanish texts — traducción poética (aprobada por Veronica)
 export const es = {
   meta: {
     title: "Doula Postparto & NICU | Coach de Sueño Infantil | Especialista en Recién Nacidos",
     description:
-      "Con más de 26 años de experiencia y más de 1,000 familias atendidas, Veronica Hinojosa-Stang ofrece servicios compasivos y expertos de doula posparto, enfermera de bebés y coaching de sueño infantil en Los Ángeles e internacionalmente.",
+      "Con más de 26 años de experiencia y más de 1,000 familias acompañadas, Veronica Hinojosa-Stang brinda servicios de doula postparto, enfermera de bebés y coaching de sueño infantil con amor y dedicación en Los Ángeles y alrededor del mundo.",
   },
 
-  tagline: "Descansa tranquila, mientras ella se encarga de todo.",
+  tagline: "Descansa y anida, mientras ella cuida cada latido de tu vida.",
   tagline2: "Mereces lo mejor.",
 
   stats: [
@@ -17,27 +17,27 @@ export const es = {
   ],
 
   hero: {
-    cta: "Contactar a Veronica",
+    cta: "Escríbele a Veronica",
   },
 
   letter: {
     label: "Sobre Veronica",
-    heading: "Una Carta a las Familias",
+    heading: "Una Carta para las Familias",
     paragraphs: [
-      'Con más de <strong>26 años de experiencia</strong> y habiendo apoyado a más de <strong>1,000 familias</strong>, Veronica ofrece un cuidado posparto compasivo, experto y profundamente personalizado durante una de las etapas más transformadoras de la vida. Con base en <strong>Los Ángeles y Long Beach</strong>, atiende familias local e internacionalmente como <strong>Enfermera de Bebés Viajera y Doula Internacional</strong>, brindando continuidad, tranquilidad y apoyo profesional donde sea que el camino las lleve.',
-      'Se especializa en <strong>cuidado de recién nacidos, bebés con necesidades especiales, bebés de NICU, prematuros y gemelos</strong>, y apoya con orgullo a <strong>familias LGBT</strong>, así como a familias que reciben bebés por nacimiento, adopción o gestación subrogada. Sus servicios también se extienden a familias que utilizan los <strong>beneficios CARROT</strong> y participantes del <strong>Programa Bridge</strong>, asegurando acceso a apoyo y orientación de alta calidad. Veronica camina junto a los padres con presencia tranquila, orientación clara y cuidado informado por el trauma.',
-      'Su trabajo se centra en el <strong>coaching práctico</strong> que empodera a los padres para que se sientan seguros\u2014desde el apoyo con la alimentación (lactancia materna, lactancia de pecho o biberón) hasta comprender las señales y ritmos de su bebé. Como <strong>Coach de Sueño Infantil</strong>, ayuda a las familias a establecer bases de sueño saludables y gentiles.',
-      'Cada familia recibe un <strong>plan de cuidado personalizado</strong> diseñado para nutrir al bebé, apoyar la recuperación de los padres y fortalecer la confianza\u2014para que puedas comenzar este capítulo sintiéndote arraigada, conectada y respaldada.',
+      'Con más de <strong>26 años de entrega</strong> y habiendo acompañado a más de <strong>1,000 familias</strong>, Veronica ofrece un cuidado postparto lleno de compasión, experiencia y cercanía durante una de las etapas más hermosas y transformadoras de la vida. Desde <strong>Los Ángeles y Long Beach</strong>, acompaña familias de forma local e internacional como <strong>Enfermera de Bebés Viajera y Doula Internacional</strong>, brindando continuidad, confianza y apoyo profesional donde quiera que la vida las lleve.',
+      'Se especializa en el <strong>cuidado de recién nacidos, bebés con necesidades especiales, bebés de NICU, prematuros y gemelos</strong>, y acompaña con orgullo a <strong>familias LGBT</strong>, así como a familias que reciben a sus bebés por nacimiento, adopción o gestación subrogada. También atiende a familias con <strong>beneficios CARROT</strong> y participantes del <strong>Programa Bridge</strong>, asegurando que cada familia tenga acceso a un apoyo de calidad. Veronica camina junto a los padres con presencia serena, guía clara y un cuidado profundamente humano.',
+      'Su vocación se centra en el <strong>acompañamiento práctico</strong> que empodera a los padres para sentirse seguros\u2014desde el apoyo con la alimentación (lactancia materna, lactancia de pecho o biberón) hasta comprender las señales y ritmos únicos de su bebé. Como <strong>Coach de Sueño Infantil</strong>, ayuda a las familias a construir bases de sueño saludables y amorosas.',
+      'Cada familia recibe un <strong>plan de cuidado personalizado</strong> diseñado para nutrir al bebé, acompañar la recuperación de los padres y fortalecer su confianza\u2014para que puedan comenzar este nuevo capítulo sintiéndose en paz, conectados y profundamente acompañados.',
     ],
     closing: {
-      tagline: "Descansa tranquila, mientras ella se encarga de todo.",
+      tagline: "Descansa y anida, mientras ella cuida cada latido de tu vida.",
       line2: "Mereces lo mejor.",
       signoff: "Con cariño y dedicación,",
       signature: "Tu Doula, Veronica",
     },
     missionLabel: "Nuestra Misión",
     mission:
-      "Baby Nurse and Doula Services busca ser el apoyo líder para nuevos padres, asegurando una transición suave y alegre hacia la paternidad. Nuestra misión es brindar cuidado personalizado y experto con apoyo sincero, empoderando a las familias para crear vínculos profundos, recuperarse efectivamente y prosperar juntos. Nos esforzamos para que cada padre se sienta seguro y valorado durante este viaje especial.",
+      "Baby Nurse and Doula Services nació para ser el abrazo que toda familia necesita al dar la bienvenida a un nuevo ser. Nuestra misión es brindar cuidado personalizado, experto y de corazón, empoderando a las familias para crear vínculos profundos, recuperarse con amor y florecer juntos. Cada padre merece sentirse seguro, valorado y acompañado en este viaje tan especial.",
   },
 
   trust: {
@@ -53,45 +53,45 @@ export const es = {
     },
     press: {
       title: "Destacada",
-      subtitle: "En las Noticias",
+      subtitle: "En la Prensa",
     },
   },
 
   press: {
     label: "Prensa",
-    heading: "En las Noticias",
+    heading: "En la Prensa",
     cta: "Leer artículo",
     articles: [
       {
-        title: "El Condado de LA Busca Expandir Servicios de Doula para Mujeres con Medi-Cal y Bajos Ingresos",
+        title: "El Condado de Los Ángeles Busca Expandir el Servicio de Doulas para Mujeres con Medi-Cal y Bajos Ingresos",
         excerpt:
-          "Veronica fue destacada en este artículo de La Opinión abogando por la expansión de servicios de doula para apoyar a familias desatendidas a través de Medi-Cal.",
+          "Veronica fue destacada en este artículo de La Opinión, alzando la voz por la expansión del servicio de doulas para acompañar a familias vulnerables a través de Medi-Cal.",
       },
       {
         title: "Destacados de la Comunidad: Conoce a Veronica Hinojosa-Stang",
         excerpt:
-          "Un reportaje a fondo sobre el camino de Veronica, su pasión por apoyar a las familias, y cómo Baby Nurse and Doula Services se convirtió en un nombre de confianza en Los Ángeles.",
+          "Un hermoso reportaje sobre el camino de Veronica, su pasión por acompañar familias, y cómo Baby Nurse and Doula Services se convirtió en un nombre de confianza y cariño en Los Ángeles.",
       },
     ],
   },
 
   pillars: {
     label: "Servicios",
-    heading: "Cómo Ayuda Veronica",
+    heading: "Cómo Acompaña Veronica",
     items: [
       {
         title: "Enfermera Nocturna y Cuidado del Recién Nacido",
-        description: "Cuidado integral nocturno y diurno para recién nacidos, prematuros y gemelos. Acondicionamiento gentil del sueño para que tu bebé duerma 12 horas entre las 12 y 14 semanas.",
-        specialties: ["Doula Posparto", "Coach de Sueño", "Masaje Infantil", "Apoyo con Alimentación", "Cuidado Kangaroula"],
+        description: "Cuidado integral de día y de noche para recién nacidos, prematuros y gemelos. Un acompañamiento gentil del sueño para que tu bebé descanse 12 horas entre las 12 y 14 semanas de vida.",
+        specialties: ["Doula Postparto", "Coach de Sueño", "Masaje Infantil", "Apoyo con Alimentación", "Cuidado Kangaroula"],
       },
       {
-        title: "Doula de Parto y Posparto",
-        description: "Desarrollo de plan de parto, educación prenatal, apoyo con lactancia y cuidado posparto inmediato. Apoyando a todas las familias\u2014LGBT, adopción, gestación subrogada.",
+        title: "Doula de Parto y Postparto",
+        description: "Plan de parto, educación prenatal, apoyo con lactancia y cuidado postparto inmediato. Acompañando con amor a todas las familias\u2014LGBT, adopción, gestación subrogada.",
         specialties: ["Doula de Parto", "Doula NICU", "Educadora en Lactancia", "Cuidado Informado por Trauma", "Coach de Salud"],
       },
       {
         title: "Doula Viajera e Internacional",
-        description: "Servicios de doula nacionales e internacionales. Apoyando familias que usan Carrot Fertility Benefits y participantes del Programa Bridge donde sea que el camino las lleve.",
+        description: "Servicios de doula nacionales e internacionales. Acompañando familias con beneficios Carrot Fertility y participantes del Programa Bridge, donde quiera que la vida las lleve.",
         specialties: ["Viaje Internacional", "Apoyo en Adopción", "Apoyo en Subrogación", "Transición de Niñera", "Transición de Mascotas y Hermanos"],
       },
     ],
@@ -103,9 +103,9 @@ export const es = {
   },
 
   footer: {
-    cta: "¿Lista para comenzar tu camino?",
-    ctaSub: "Deja que Veronica te guíe en uno de los capítulos más hermosos de la vida.",
-    emailBtn: "Escribir a Veronica",
+    cta: "¿Lista para comenzar este hermoso camino?",
+    ctaSub: "Deja que Veronica te acompañe en uno de los capítulos más bellos de tu vida.",
+    emailBtn: "Escribirle a Veronica",
     copyright: "Todos los derechos reservados.",
   },
 };
