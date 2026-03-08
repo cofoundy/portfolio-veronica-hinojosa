@@ -21,9 +21,10 @@ const c = siteConfig.colors;
     <div class="grid grid-cols-1 gap-4 max-w-3xl">
       {siteConfig.press.map((article, i) => {
         const translatedArticle = texts.press.articles[i];
-        const isLink = !!article.url;
+        const articleUrl = (translatedArticle as any).url || article.url;
+        const isLink = !!articleUrl;
         const Tag = isLink ? "a" : "div";
-        const linkProps = isLink ? { href: article.url, target: "_blank", rel: "noopener noreferrer" } : {};
+        const linkProps = isLink ? { href: articleUrl, target: "_blank", rel: "noopener noreferrer" } : {};
         return (
           <Tag
             {...linkProps}

@@ -6,8 +6,8 @@ export const es = {
       "Con más de 26 años de experiencia y más de 1,000 familias acompañadas, Veronica Hinojosa-Stang brinda servicios de doula postparto, enfermera de bebés y coaching de sueño infantil con amor y dedicación en Los Ángeles y alrededor del mundo.",
   },
 
-  tagline: "Descansa y anida, mientras ella cuida cada latido de tu vida.",
-  tagline2: "Mereces lo mejor.",
+  tagline: "Anida y respira, mientras me hago cargo de lo más importante de tu vida.",
+  tagline2: "Porque cada latido de tu vida suena a eterno.",
 
   stats: [
     { value: "26+", label: "Años" },
@@ -30,8 +30,8 @@ export const es = {
       'Cada familia recibe un <strong>plan de cuidado personalizado</strong> diseñado para nutrir al bebé, acompañar la recuperación de los padres y fortalecer su confianza\u2014para que puedan comenzar este nuevo capítulo sintiéndose en paz, conectados y profundamente acompañados.',
     ],
     closing: {
-      tagline: "Descansa y anida, mientras ella cuida cada latido de tu vida.",
-      line2: "Mereces lo mejor.",
+      tagline: "Anida y respira, mientras me hago cargo de lo más importante de tu vida.",
+      line2: "Porque cada latido de tu vida suena a eterno.",
       signoff: "Con cariño y dedicación,",
       signature: "Tu Doula, Veronica",
     },
@@ -71,6 +71,7 @@ export const es = {
         title: "Destacados de la Comunidad: Conoce a Ms. Veronica",
         excerpt:
           "Un hermoso reportaje sobre el camino de Veronica, su pasión por acompañar familias, y cómo Baby Nurse and Doula Services se convirtió en un nombre de confianza y cariño en Los Ángeles.",
+        url: "/prensa.pdf",
       },
     ],
   },
