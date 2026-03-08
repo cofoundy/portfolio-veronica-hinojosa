@@ -71,6 +71,7 @@ export const es = {
         title: "Destacados de la Comunidad: Conoce a Ms. Veronica",
         excerpt:
           "Un hermoso reportaje sobre el camino de Veronica, su pasión por acompañar familias, y cómo Baby Nurse and Doula Services se convirtió en un nombre de confianza y cariño en Los Ángeles.",
+        url: "/press-voyage-la.pdf",
       },
     ],
   },
