@@ -66,6 +66,7 @@ export const en = {
         title: "LA County Seeks to Expand Doula Services for Women with Medi-Cal and Low Income",
         excerpt:
           "Veronica was featured in this La Opinión article advocating for expanded doula services to support underserved families through Medi-Cal.",
+        url: "/press-la-opinion.pdf",
       },
       {
         title: "Community Highlights: Meet Veronica Hinojosa-Stang",
