@@ -46,6 +46,10 @@ const c = siteConfig.colors;
               {translatedArticle.excerpt}
             </p>
 
+            {(article as any).image && (
+              <img src={(article as any).image} alt={translatedArticle.title} class="mt-4 rounded-xl w-full object-cover" style="max-height: 280px;" loading="lazy" />
+            )}
+
             {isLink && (
               <div class="mt-4 flex items-center gap-1 text-sm font-medium transition-all duration-300 group-hover:gap-2" style={`color: ${c.coral}`}>
                 {texts.press.cta}

@@ -73,6 +73,11 @@ export const en = {
         excerpt:
           "An in-depth feature on Veronica\u2019s journey, her passion for supporting families, and how Baby Nurse and Doula Services became a trusted name in Los Angeles.",
       },
+      {
+        title: "Noticiero Univision 34 LA",
+        excerpt:
+          "Veronica Hinojosa-Stang on Noticiero Univision 34 Los Angeles — Baby Nurse and Doula Services LLC.",
+      },
     ],
   },
 
