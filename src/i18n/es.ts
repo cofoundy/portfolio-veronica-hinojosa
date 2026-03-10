@@ -7,7 +7,7 @@ export const es = {
   },
 
   tagline: "Anida y respira, mientras me hago cargo de lo más importante de tu vida.",
-  tagline2: "Porque cada latido de tu vida suena a eterno.",
+  tagline2: "Mereces lo mejor.",
 
   stats: [
     { value: "26+", label: "Años" },
@@ -31,7 +31,7 @@ export const es = {
     ],
     closing: {
       tagline: "Anida y respira, mientras me hago cargo de lo más importante de tu vida.",
-      line2: "Porque cada latido de tu vida suena a eterno.",
+      line2: "Mereces lo mejor.",
       signoff: "Con cariño y dedicación,",
       signature: "Tu Doula, Veronica",
     },

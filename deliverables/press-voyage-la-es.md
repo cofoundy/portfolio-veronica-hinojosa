@@ -144,7 +144,7 @@ Para mí, el futuro es sobre amor, aprendizaje y transformación — para las fa
 
 \begin{center}
 \textit{Anida y respira, mientras me hago cargo de lo más importante de tu vida.}\\
-\textit{Porque cada latido de tu vida suena a eterno.}
+\textit{Mereces lo mejor.}
 \end{center}
 
 \vspace{0.5cm}
