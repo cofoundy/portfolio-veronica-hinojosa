@@ -23,6 +23,16 @@ const texts = getTexts(lang);
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={texts.meta.description} />
+    <meta property="og:title" content={`${siteConfig.name} — ${siteConfig.brandName}`} />
+    <meta property="og:description" content={texts.meta.description} />
+    <meta property="og:image" content="https://veronicahinojosa.com/og-image.jpg" />
+    <meta property="og:url" content="https://veronicahinojosa.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteConfig.brandName} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${siteConfig.name} — ${siteConfig.brandName}`} />
+    <meta name="twitter:description" content={texts.meta.description} />
+    <meta name="twitter:image" content="https://veronicahinojosa.com/og-image.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
