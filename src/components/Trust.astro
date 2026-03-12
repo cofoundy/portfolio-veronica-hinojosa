@@ -72,9 +72,15 @@ const c = siteConfig.colors;
         <p class="text-sm font-medium mb-2" style={`color: ${c.teal}`}>{texts.trust.press.subtitle}</p>
         <div class="flex flex-col gap-1">
           {siteConfig.press.map((article) => (
-            <a href={article.url} target="_blank" rel="noopener noreferrer" class="text-xs text-gray-500 hover:underline flex items-center gap-1 transition-colors">
-              <span style={`color: ${c.coral}`}>&#9656;</span> {article.source}
-            </a>
+            article.url ? (
+              <a href={article.url} target="_blank" rel="noopener noreferrer" class="text-xs text-gray-500 hover:underline flex items-center gap-1 transition-colors">
+                <span style={`color: ${c.coral}`}>&#9656;</span> {article.source}
+              </a>
+            ) : (
+              <span class="text-xs text-gray-500 flex items-center gap-1">
+                <span style={`color: ${c.coral}`}>&#9656;</span> {article.source}
+              </span>
+            )
           ))}
         </div>
       </div>

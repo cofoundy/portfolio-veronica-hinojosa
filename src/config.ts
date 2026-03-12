@@ -40,7 +40,7 @@ export const siteConfig = {
       url: "https://voyagela.com/interview/community-highlights-meet-veronica-hinojosa-stang-of-baby-nurse-and-doula-services/",
     },
     {
-      source: "Noticiero Univision 34 LA",
+      source: "Univision 34 LA",
       date: "",
       url: "",
       image: "/univision.jpg",
@@ -48,7 +48,7 @@ export const siteConfig = {
   ],
 
   // ─── Pillar icons (not translated) ───
-  pillarIcons: ["moon", "heart", "plane"],
+  pillarIcons: ["heart", "moon", "plane"],
 
   // ─── Featured certifications (official names — not translated) ───
   featuredCerts: [

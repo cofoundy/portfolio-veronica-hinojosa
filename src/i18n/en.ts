@@ -21,23 +21,27 @@ export const en = {
   },
 
   letter: {
-    label: "About Veronica",
-    heading: "A Letter to Families",
+    label: "Meet Ms. Veronica",
+    heading: "A Message for Every Family \u2764\uFE0F",
     paragraphs: [
-      'With over <strong>26 years of experience</strong> and having supported more than <strong>1,000 families</strong>, Veronica offers compassionate, expert, and deeply personalized postpartum care during one of the most transformative seasons of life. Based in <strong>Los Angeles and Long Beach</strong>, she serves families locally and internationally as a <strong>Traveling Baby Nurse and International Doula</strong>, providing continuity, reassurance, and skilled support wherever the journey unfolds.',
-      'She specializes in <strong>newborn care, special needs babies, NICU babies, preemies, and twins</strong>, and proudly supports <strong>LGBT families</strong>, as well as families welcoming babies through birth, adoption, or surrogacy. Her services also extend to families using <strong>CARROT benefits</strong> and participating in the <strong>Bridge Program</strong>, ensuring access to high-quality support and guidance. Veronica walks alongside parents with calm presence, clear guidance, and trauma-informed care.',
-      'Her work centers on <strong>hands-on coaching</strong> that empowers parents to feel confident\u2014from feeding support (breastfeeding, chest-feeding, or bottle-feeding) to understanding their baby\u2019s cues and rhythms. As an <strong>Infant Sleep Coach</strong>, she helps families establish healthy, gentle sleep foundations.',
-      'Every family receives a <strong>customized care plan</strong> designed to nurture the baby, support parental recovery, and strengthen confidence\u2014so you can begin this chapter feeling grounded, connected, and supported.',
+      'With over <strong>26 years of experience</strong> and having supported more than <strong>1,000 families</strong>, Ms. Veronica offers compassionate, humanized, and deeply personalized postpartum services, accompanying families during one of the most vulnerable and delicate stages of their lives.',
+      'From the heart of <strong>Los Angeles and Long Beach</strong>, she serves local families and is available for domestic and international services as a <strong>Traveling Baby Nurse and International Doula</strong>, providing continuity, reassurance, and specialized support wherever the family may be.',
+      'Ms. Veronica has extensive experience in <strong>newborn care, NICU babies, special needs babies, preemies, and twins</strong>, and offers care with empathy and respect to <strong>LGBT families</strong>, as well as families welcoming their babies through traditional birth (natural, C-section, or induction), adoption, or surrogacy. She also supports families using <strong>CARROT benefits</strong> and participating in the <strong>Bridge Program</strong>, ensuring access to high-quality care.',
+      'Her work centers on <strong>active coaching</strong>\u2014from breastfeeding, chest-feeding, and bottle-feeding to understanding the unique cues and rhythms of each baby. As an <strong>Infant Sleep Coach</strong>, Ms. Veronica helps establish healthy, gentle sleep patterns that respect the baby\u2019s development and the parents\u2019 well-being.',
+      'Every family receives a <strong>customized care plan</strong> designed to nurture the baby with love, support postpartum recovery, and strengthen the bonds between parents and their baby.',
     ],
     closing: {
-      tagline: "Nest and rest, while she takes care of the rest.",
+      tagline: "Nest and rest, while I take care of the rest!",
       line2: "You deserve the best.",
       signoff: "With warmth and dedication,",
       signature: "Your Doula, Veronica",
     },
+    visionLabel: "Our Vision",
+    vision:
+      "Baby Nurse and Doula Services aims to be the leading support for new parents, ensuring a smooth and joyful transition into parenthood.",
     missionLabel: "Our Mission",
     mission:
-      "Baby Nurse and Doula Services aims to be the leading support for new parents, ensuring a smooth and joyful transition into parenthood. Our mission is to provide personalized, expert care and heartfelt support, empowering families to bond deeply, recover effectively, and thrive together. We strive to make every parent feel confident and cherished during this special journey.",
+      "Our mission is to provide personalized care, expertise, and heartfelt support, empowering families to bond deeply with their baby, recover effectively, and thrive together. We strive to make every mother and father feel accompanied, confident, and valued during this very special chapter of their lives, building step by step unique and unparalleled experiences in raising their baby.",
   },
 
   trust: {
@@ -65,8 +69,7 @@ export const en = {
       {
         title: "LA County Seeks to Expand Doula Services for Women with Medi-Cal and Low Income",
         excerpt:
-          "Veronica was featured in this La Opinión article advocating for expanded doula services to support underserved families through Medi-Cal.",
-        url: "/press-la-opinion.pdf",
+          "Veronica was featured in this La Opinión article advocating for expanded doula services to support underserved families through Medi-Cal. (Article in Spanish)",
       },
       {
         title: "Community Highlights: Meet Veronica Hinojosa-Stang",
@@ -76,7 +79,7 @@ export const en = {
       {
         title: "Noticiero Univision 34 LA",
         excerpt:
-          "Veronica Hinojosa-Stang on Noticiero Univision 34 Los Angeles — Baby Nurse and Doula Services LLC.",
+          "Veronica Hinojosa-Stang featured on Noticiero Univision 34 Los Angeles — Baby Nurse and Doula Services LLC.",
       },
     ],
   },
@@ -86,19 +89,19 @@ export const en = {
     heading: "How Veronica Helps",
     items: [
       {
-        title: "Night Nurse & Newborn Care",
-        description: "Comprehensive overnight and daytime care for newborns, preemies, and twins. Gentle sleep conditioning so your baby sleeps 12 hours by 12\u201314 weeks.",
-        specialties: ["Postpartum Doula", "Baby Sleep Coach", "Infant Massage", "Feeding Support", "Kangaroula Care"],
-      },
-      {
         title: "Birth & Postpartum Doula",
-        description: "Birth plan development, childbirth education, breastfeeding support, and immediate postpartum care. Supporting all families\u2014LGBT, adoption, surrogacy.",
-        specialties: ["Birth Doula", "NICU Doula", "Lactation Educator", "Trauma Informed Care", "Health Coach"],
+        description: "Prenatal education, breastfeeding and feeding support, and immediate postpartum care. Supporting all families with love\u2014LGBT, adoption, surrogacy.",
+        specialties: ["Birth Doula", "Postpartum Doula", "Certified Happiest Educator", "NICU Doula", "Lactation Educator", "Trauma-informed Care Provider", "Health Coach"],
       },
       {
-        title: "Traveling & International Doula",
-        description: "Domestic and international doula services. Supporting families using Carrot Fertility Benefits and Bridge Program participants wherever the journey unfolds.",
-        specialties: ["International Travel", "Adoption Support", "Surrogacy Support", "Nanny Transition", "Pet & Sibling Transitioning"],
+        title: "Night Doula Services, Newborn Care Specialist & Infant Sleep Coach",
+        description: "Night postpartum support and comprehensive overnight care for newborns, preemies, and twins. Gentle sleep conditioning and coaching so your baby sleeps through the night between 12\u201314 weeks.",
+        specialties: ["Kangaroula Services", "Baby Sleep Coach", "Infant Massage", "Pediatric Massage", "Infant Feeding Support", "Routine & Schedule Development", "Sleep Foundation Coaching"],
+      },
+      {
+        title: "Traveling Baby Nurse & International Doula",
+        description: "Domestic and international doula services, supporting families using Carrot Fertility benefits and those participating in the Bridge Program, wherever their parenting journey unfolds.",
+        specialties: ["International Travel", "Adoption Support", "Surrogacy Support", "Nanny Transition", "Pet & Sibling Transitioning", "Jet Lag Support"],
       },
     ],
   },

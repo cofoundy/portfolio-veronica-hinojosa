@@ -21,10 +21,9 @@ const c = siteConfig.colors;
     <div class="grid grid-cols-1 gap-4 max-w-3xl">
       {siteConfig.press.map((article, i) => {
         const translatedArticle = texts.press.articles[i];
-        const articleUrl = (translatedArticle as any).url || article.url;
-        const isLink = !!articleUrl;
+        const isLink = !!article.url;
         const Tag = isLink ? "a" : "div";
-        const linkProps = isLink ? { href: articleUrl, target: "_blank", rel: "noopener noreferrer" } : {};
+        const linkProps = isLink ? { href: article.url, target: "_blank", rel: "noopener noreferrer" } : {};
         return (
           <Tag
             {...linkProps}
@@ -47,7 +46,13 @@ const c = siteConfig.colors;
             </p>
 
             {(article as any).image && (
-              <img src={(article as any).image} alt={translatedArticle.title} class="mt-4 rounded-xl w-full object-cover" style="max-height: 280px;" loading="lazy" />
+              <img
+                src={(article as any).image}
+                alt={translatedArticle.title}
+                class="mt-4 rounded-xl w-full object-cover"
+                style="max-height: 280px;"
+                loading="lazy"
+              />
             )}
 
             {isLink && (

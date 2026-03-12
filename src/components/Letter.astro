@@ -15,7 +15,7 @@ const c = siteConfig.colors;
     {/* Section label */}
     <div class="reveal-left mb-8">
       <span class="text-[10px] md:text-xs font-medium uppercase tracking-[0.25em]" style={`color: ${c.coral}`}>{texts.letter.label}</span>
-      <h2 class="text-3xl md:text-4xl font-bold mt-2" style={`color: ${c.dark}`}>{texts.letter.heading}</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mt-2" style={`color: ${c.dark}`}><Fragment set:html={texts.letter.heading.replace(/\u2764\uFE0F/, '<span style="font-size: 0.55em; vertical-align: middle;">\u2764\uFE0F</span>')} /></h2>
       <div class="w-12 h-0.5 mt-3 rounded-full" style={`background: ${c.coral}`}></div>
     </div>
 
@@ -42,19 +42,36 @@ const c = siteConfig.colors;
       </div>
     </div>
 
-    {/* Mission Statement — pullquote card */}
-    <div class="reveal stagger-3 mt-12 p-6 md:p-8 rounded-2xl" style={`background: ${c.cream}; border: 1px solid ${c.teal}08`}>
-      <div class="flex gap-4">
-        <div class="flex-shrink-0 mt-1">
-          <svg class="w-5 h-5" style={`color: ${c.coral}`} fill="currentColor" viewBox="0 0 24 24">
-            <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-          </svg>
+    {/* Vision & Mission — pullquote cards */}
+    <div class="reveal stagger-3 mt-12 space-y-4">
+      <div class="p-6 md:p-8 rounded-2xl" style={`background: ${c.cream}; border: 1px solid ${c.teal}08`}>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 mt-1">
+            <svg class="w-5 h-5" style={`color: ${c.coral}`} fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-xs font-medium uppercase tracking-wider mb-2" style={`color: ${c.teal}`}>{(texts.letter as any).visionLabel}</p>
+            <p class="text-base md:text-[17px] leading-[1.8] text-gray-600 italic">
+              "{(texts.letter as any).vision}"
+            </p>
+          </div>
         </div>
-        <div>
-          <p class="text-xs font-medium uppercase tracking-wider mb-2" style={`color: ${c.teal}`}>{texts.letter.missionLabel}</p>
-          <p class="text-base md:text-[17px] leading-[1.8] text-gray-600 italic">
-            "{texts.letter.mission}"
-          </p>
+      </div>
+      <div class="p-6 md:p-8 rounded-2xl" style={`background: ${c.cream}; border: 1px solid ${c.teal}08`}>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 mt-1">
+            <svg class="w-5 h-5" style={`color: ${c.coral}`} fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-xs font-medium uppercase tracking-wider mb-2" style={`color: ${c.teal}`}>{texts.letter.missionLabel}</p>
+            <p class="text-base md:text-[17px] leading-[1.8] text-gray-600 italic">
+              "{texts.letter.mission}"
+            </p>
+          </div>
         </div>
       </div>
     </div>
