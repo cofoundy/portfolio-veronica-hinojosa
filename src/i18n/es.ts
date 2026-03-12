@@ -78,9 +78,9 @@ export const es = {
         url: "/press-voyage-la.pdf",
       },
       {
-        title: "Noticiero Univision 34 LA",
+        title: "Soy Una Doula Hoy! — Noticiero Univision 34 Los Ángeles",
         excerpt:
-          "Verónica Hinojosa-Stang en Noticiero Univision 34 Los Ángeles — Baby Nurse and Doula Services LLC.",
+          "Verónica Hinojosa-Stang fue destacada en Noticiero Univision 34 Los Ángeles en un segmento que resalta su labor como doula y enfermera de bebés, dando visibilidad al papel vital de las profesionales del cuidado postparto en la comunidad latina.",
       },
     ],
   },
