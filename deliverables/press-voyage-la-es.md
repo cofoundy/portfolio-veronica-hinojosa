@@ -143,8 +143,8 @@ Para mí, el futuro es sobre amor, aprendizaje y transformación — para las fa
 \vspace{1cm}
 
 \begin{center}
-\textit{Anida y respira, mientras me hago cargo de lo más importante de tu vida.}\\
-\textit{Mereces lo mejor.}
+\textit{Anida y respira, mientras me hago cargo de lo más importante de tu vida,}\\
+\textit{Te mereces lo mejor!}
 \end{center}
 
 \vspace{0.5cm}

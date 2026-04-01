@@ -6,13 +6,13 @@ export const en = {
       "With 26+ years of experience and 1,000+ families supported, Veronica Hinojosa-Stang provides compassionate, expert postpartum doula, baby nurse, and infant sleep coaching services in Los Angeles and internationally.",
   },
 
-  tagline: "Nest and rest, while she takes care of the rest.",
-  tagline2: "You deserve the best.",
+  tagline: "Nest and rest, while she takes care of the rest,",
+  tagline2: "You deserve the best!",
 
   stats: [
     { value: "26+", label: "Years" },
     { value: "1,000+", label: "Families" },
-    { value: "111+", label: "Yelp Reviews" },
+    { value: "112", label: "Yelp Reviews" },
     { value: "42+", label: "Certifications" },
   ],
 
@@ -31,8 +31,8 @@ export const en = {
       'Every family receives a <strong>customized care plan</strong> designed to nurture the baby with love, support postpartum recovery, and strengthen the bonds between parents and their baby.',
     ],
     closing: {
-      tagline: "Nest and rest, while I take care of the rest!",
-      line2: "You deserve the best.",
+      tagline: "Nest and rest, while I take care of the rest,",
+      line2: "You deserve the best!",
       signoff: "With warmth and dedication,",
       signature: "Your Doula, Veronica",
     },

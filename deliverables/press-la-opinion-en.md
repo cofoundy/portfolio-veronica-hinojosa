@@ -111,8 +111,8 @@ The motion approved this week directs the Department of Public Health, alongside
 \vspace{1cm}
 
 \begin{center}
-\textit{Nest and rest, while she takes care of the rest.}\\
-\textit{You deserve the best.}
+\textit{Nest and rest, while she takes care of the rest,}\\
+\textit{You deserve the best!}
 \end{center}
 
 \vspace{0.5cm}
